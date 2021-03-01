@@ -21,7 +21,7 @@ if (filmClick&&peopleClick) {
     return(
         <React.Fragment>
             <div className="container-fluid">
-                <div className="row justify-content-md-center">
+                <div className="row">
                 <div className="col-4">
                 <button className="btn btn-info btn-lg" onClick={handleButtonClickFilm}>Load Films</button>
                 </div>
@@ -38,7 +38,7 @@ if (filmClick&&peopleClick) {
 } else if (!filmClick){
         return (
     <React.Fragment>
-        <button className="btn btn-info btn-lg " onClick={handleButtonClickPeople}>Load People</button>
+        <button className="btn btn-info btn-lg" onClick={handleButtonClickPeople}>Load People</button>
             <div className="container-fluid">
                 <div className="row">
                     <Films/> 
@@ -46,7 +46,7 @@ if (filmClick&&peopleClick) {
             </div> 
      </React.Fragment>
             )
-            
+
     }else if (!peopleClick){
         return(
      <React.Fragment>

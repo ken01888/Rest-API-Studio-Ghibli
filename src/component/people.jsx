@@ -19,7 +19,7 @@ const People = () => {
                     <div className="card-title bg-light">{info.name}</div>
                     <div className="card-subtitle mb-2 text-muted">{info.gender}</div>
                     <div className="card-subtitle mb-2 text-muted">{info.age}</div>
-                    <a href={`${info.url}`} className="card-link">{`API LINK - ${info.name}`}</a>
+                    <a href={`${info.url}`} className="card-link" target="_blank" rel='noreferrer'>{`API LINK - ${info.name}`}</a>
                     <div className="card-text">{info.description}</div>
                 </div>
             </div>
